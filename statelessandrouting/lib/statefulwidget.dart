@@ -6,7 +6,7 @@ void main() {
     Stateless tidak bisa mengganti nilai.
     Stateful bisa
     */
-    home: StatelessClass()
+    home: StatefulClass()
   ));
 }
 
@@ -17,7 +17,7 @@ class StatelessClass extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Stateless Statefull"),      
+        title: Text("Stateless"),      
       ),
       body: Text("Pressed : $number Times"),
       floatingActionButton: FloatingActionButton(
@@ -43,7 +43,7 @@ class StatefulStateClass extends State<StatefulClass>{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Stateless Statefull"),      
+        title: Text("Statefull"),      
       ),
       body: Text("Pressed : $number Times"),
       floatingActionButton: FloatingActionButton(
