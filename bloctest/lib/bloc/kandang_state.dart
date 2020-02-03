@@ -35,10 +35,11 @@ class KandangInitial extends KandangState {
 }
 
 class KandangContinue extends KandangState{
-  final KandangState reinit;
+  //final KandangState reinit;
+  final Map<String,String> _kandang;
 
-  KandangContinue(this.reinit);
+  KandangContinue(this._kandang);
 
-  Map<String, String> get _kandang => super._kandang;
+  //Map<String, String> get _kandang => super._kandang;
     
 }

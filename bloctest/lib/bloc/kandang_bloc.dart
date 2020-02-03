@@ -17,7 +17,7 @@ class KandangBloc extends Bloc<KandangEvent, KandangState> {
   ) async* {
     if(event is TambahHewan){
       state.kasihSuara(event.hewan, event.suara);
-      yield KandangContinue(state);
+      yield KandangContinue(state._kandang);
     }
   }
 }
