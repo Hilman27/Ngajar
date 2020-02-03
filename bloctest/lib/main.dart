@@ -44,14 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ClassButton(),
                 ],
               ),        
-            ),      
-            floatingActionButton: FloatingActionButton(
-              child: Icon(Icons.add),
-              onPressed: () {
-                BlocProvider.of<KandangBloc>(context)                            
-                                  .add(TambahHewan('Ayam', 'Petok'));
-              },        
-            ),
+            ),            
           )
     
     );

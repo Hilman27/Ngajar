@@ -38,5 +38,7 @@ class KandangContinue extends KandangState{
   final KandangState reinit;
 
   KandangContinue(this.reinit);
+
+  Map<String, String> get _kandang => super._kandang;
     
 }
