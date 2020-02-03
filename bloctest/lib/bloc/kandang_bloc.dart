@@ -15,6 +15,9 @@ class KandangBloc extends Bloc<KandangEvent, KandangState> {
   Stream<KandangState> mapEventToState(
     KandangEvent event,
   ) async* {
-    // TODO: Add Logic
+    if(event is TambahHewan){
+      state.kasihSuara(event.hewan, event.suara);
+      yield KandangContinue(state);
+    }
   }
 }
