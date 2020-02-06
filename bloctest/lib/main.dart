@@ -59,7 +59,8 @@ class ClassAnak extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder <KandangBloc, KandangState>(
       builder: (context,  state) {
-        return Text("Data dalam Bloc : ${state.mintaSuara("kucing").toString()}");
+        //return Text("Data dalam Bloc : ${state.mintaSuara("kucing").toString()}");
+        return Text("Data dalam Bloc : ${state.ambilSuara}");
       },            
       );
   }
